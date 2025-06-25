@@ -1,13 +1,7 @@
 clear; clc; close all;
 load('sys_param')
-%%
-g = 9.81;
-m = 0.036;
-L = 0.048;
-I = diag([1.7e-5, 1.7e-5, 2.9e-5]);
-inv_I = inv(I);
 
-% Initialization 
+%% Initialization 
 t = 0:0.01:5;
 x_0 = [0; 0; 3; 
        0; 0; 0;
