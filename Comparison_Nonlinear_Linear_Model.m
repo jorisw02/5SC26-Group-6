@@ -1,5 +1,5 @@
 clear; clc; close all;
-
+load('sys_param')
 %%
 g = 9.81;
 m = 0.036;
