@@ -1,4 +1,5 @@
 clear; clc; close all;
+addpath('./_functions')
 load('sys_param')
 
 %% Initialization 
