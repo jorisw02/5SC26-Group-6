@@ -1,3 +1,4 @@
+addpath('./_functions')
 %% Gradient control law
 % The aim is to write a control law in order to obtain a triangle shaped
 % formation (the latter is choosen since the resultant graph is "automatically rigid")
