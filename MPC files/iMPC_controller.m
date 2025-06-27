@@ -5,7 +5,7 @@ warning('off')
 
 %% Initialization 
 Ts = 0.01;
-N = 15; % Receding horizon
+N = 15; 
 
 x0 = [0; 0; 0.01; 
        0; 0; 0;
