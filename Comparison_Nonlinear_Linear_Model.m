@@ -1,8 +1,10 @@
 clear; clc; close all;
+
 g = 9.81; 
 m = 0.036;
 I = diag([1.7e-5, 1.7e-5, 2.9e-5]);
 inv_I = inv(I);
+L = 0.048;
 
 %% Initialization 
 t = 0:0.01:5;
