@@ -1,3 +1,4 @@
+addpath('./_functions')
 %% Simulation parameters
 dt = 0.05;
 T = 15;
