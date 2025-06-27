@@ -4,7 +4,7 @@ load('sys_param')
 
 %% Initialization 
 Ts = 0.01;
-N = 15; % Receding horizon
+N = 15; 
 
 x0 = [0; 0; 0.01; 
       0; 0; 0;
@@ -139,7 +139,7 @@ x_eq = zeros(12,1);
 
 for i = 1:k_sim-1
     rvec_temp = reshape(rvec(:,i+1:i+N), [], 1);
-    U_opt = MPC_sparse{x(:,i), rvec_temp, y(:,i), rvec(:,i)};      % Get the solution U
+    U_opt = MPC_sparse{x(:,i), rvec_temp, y(:,i), rvec(:,i)};      
 
     u(:, i) = U_opt(1:nu);
 
