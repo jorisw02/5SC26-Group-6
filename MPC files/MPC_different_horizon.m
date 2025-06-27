@@ -3,8 +3,8 @@ addpath('./_functions')
 load('sys_param')
 
 %% Initialization 
-Ts = 0.01;              % Sampling time
-N_horizon = 1:1:30;     % Receding horizon
+Ts = 0.01;              
+N_horizon = 1:1:30;    
 
 x0 = [0; 0; 0.01;       
       0; 0; 0;
