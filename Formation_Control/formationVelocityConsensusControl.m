@@ -1,3 +1,4 @@
+addpath('./_functions')
 % GOAL: 3 drones starting from different initial positions and take a
 % defined formation after hovering.
 
