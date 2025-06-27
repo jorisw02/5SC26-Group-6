@@ -137,7 +137,7 @@ y(:,1) = [x0(1:3,1); x0(7:9,1)];
 for i = 1:k_sim-1
     rvec_temp = reshape(rvec(:,i+1:i+N), [], 1);
     if i ~=1
-        dU_opt = MPC_sparse{u(:,i-1), x(:,i), x(:,i-1), y(:,i), rvec_temp, rvec(:, i)};      % Get the solution U 
+        dU_opt = MPC_sparse{u(:,i-1), x(:,i), x(:,i-1), y(:,i), rvec_temp, rvec(:, i)};      
         du(:, i) = dU_opt(1:nu); 
         u(:, i) = du(:,i) + u(:,i-1)+ input_noise(:,i);
     else
