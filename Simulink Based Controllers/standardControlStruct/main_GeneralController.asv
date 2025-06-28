@@ -202,9 +202,9 @@ print(['./Figures/4_control/','SS','/nonNom_2Dplot_1'],'-depsc')
 %%
 
 figure;clf
-for i=1:7
-    subplot(2,4,i)
-    bodemag(Wu_tot(i,i))
+for i=1:13
+    subplot(3,5,i)
+    bodemag(Wy_tot(i,i))
 end
 
 
